@@ -24,6 +24,7 @@ class MoveCommand {
     }
     
     func execute() {
+    
         if gameboardView.canPlaceMarkView(at: position) {
             gameboard.setPlayer(player, at: position)
             gameboardView.placeMarkView(player.markViewPrototype.copy(), at: position)
